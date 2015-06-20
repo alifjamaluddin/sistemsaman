@@ -5,16 +5,10 @@
 					<a class="menu-logo" data-toggle="menu" href="#menu">Menu</a>
 					<ul class="nav">
 						<li>
-							<a href="pengguna.php">Pengguna</a>
+							<a href="kenderaan.php">Kenderaan</a>
 						</li>
 						<li>
-							<a href="statistik.php">Statistik</a>
-						</li>
-						<li>
-							<a href="pengumuman.php">Pengumuman</a>
-						</li>
-						<li>
-							<a href="luluskenderaan.php">Permohonan Kelulusan Kenderaan</a>
+							<a href="saman.php">Saman</a>
 						</li>
 					</ul>
 				</div>

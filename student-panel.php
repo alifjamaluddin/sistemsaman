@@ -21,7 +21,7 @@
 <body class="avoid-fout">
 <?php include('template/loading.php'); ?>
 <?php include('template/header.php'); ?>
-<?php include('template/menu.php'); ?>
+<?php include('template/student-menu.php'); ?>
 <?php include('template/profile.php'); ?>
 
 	<div class="content">
