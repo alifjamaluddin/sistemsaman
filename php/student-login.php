@@ -7,7 +7,7 @@ if (!isset($_SESSION)) {
 }
 
 
-$SUCCESS = "<script>window.location='../student-panel.php';</script>";
+$SUCCESS = "<script>window.location='../user';</script>";
 $FAILED = "<script>alert('Wrong username or password');window.history.back();</script>";
 
 $connection = mysqli_connect(DB_HOST,DB_USERNAME,DB_PASSWORD,DB_NAME);

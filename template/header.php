@@ -12,7 +12,7 @@
 			<li>
 				<a data-toggle="menu" href="#profile">
 					<span class="access-hide">John Smith</span>
-					<span class="avatar avatar-sm"><img alt="alt text for John Smith avatar" src="images/users/avatar-001.jpg"></span>
+					<span class="avatar avatar-sm"><img alt="alt text for John Smith avatar" src="../images/users/avatar-001.jpg"></span>
 				</a>
 			</li>
 		</ul>

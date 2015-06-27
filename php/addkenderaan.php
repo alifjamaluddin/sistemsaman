@@ -6,8 +6,8 @@ if (!isset($_SESSION)) {
   session_start();
 }
 
-$SUCCESS = "<script>alert('Berjaya mendaftar kenderaan');window.location='../student-panel.php';</script>";
-$FAILED = "<script>alert('Gagal mendaftar kenderaan');window.location='../form-kenderaan.php';</script>";
+$SUCCESS = "<script>alert('Berjaya mendaftar kenderaan');window.location='../user/index.php';</script>";
+$FAILED = "<script>alert('Gagal mendaftar kenderaan');window.location='../user/form-kenderaan.php';</script>";
 
 // if(!isset($_SESSION['USER_ID']) && empty($_SESSION['USER_ID'])) {
 // 	header("Location: " . $REDIRECT_LOGIN );

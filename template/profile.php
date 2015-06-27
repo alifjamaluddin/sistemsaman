@@ -3,10 +3,10 @@
 			<div class="menu-wrap">
 				<div class="menu-top">
 					<div class="menu-top-img">
-						<img alt="John Smith" src="images/samples/landscape.jpg">
+						<img alt="John Smith" src="../images/samples/landscape.jpg">
 					</div>
 					<div class="menu-top-info">
-						<a class="menu-top-user" href="javascript:void(0)"><span class="avatar pull-left"><img alt="alt text for John Smith avatar" src="images/users/avatar-001.jpg"></span>John Smith</a>
+						<a class="menu-top-user" href="javascript:void(0)"><span class="avatar pull-left"><img alt="alt text for John Smith avatar" src="../images/users/avatar-001.jpg"></span>John Smith</a>
 					</div>
 					<div class="menu-top-info-sub">
 						<small>Some additional information about John Smith</small>

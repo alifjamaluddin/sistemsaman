@@ -21,7 +21,7 @@ if (mysqli_connect_errno())
 	<meta charset="UTF-8">
 	<meta content="IE=edge" http-equiv="X-UA-Compatible">
 	<meta content="initial-scale=1.0, width=device-width" name="viewport">
-	<title>Sistem Saman</title>
+	<title>Pengumuman</title>
 
 	<!-- css -->
 	<link href="css/base.min.css" rel="stylesheet">
@@ -43,18 +43,17 @@ if (mysqli_connect_errno())
 	<div class="content">
 		<div class="content-heading">
 			<div class="container">
-				<h1 class="heading">Kenderaan</h1>
+				<h1 class="heading">Pengumuman</h1>
 			</div>
 		</div>
 
 		<div class="container-inner">
-			<a class="btn btn-yellow waves-button waves-effect pull-right" href="form-kenderaan.php">Tambah kenderaan</a>
+			<a class="btn btn-yellow waves-button waves-effect pull-right" href="form-pengumuman.php">Tambah pengumuman</a>
 		</div>
 
 
 		<?php 
-			$nomatrik = "WEK110033";
-			$View__query="SELECT * FROM `kenderaan` WHERE nomatrik = '$nomatrik' ORDER BY tarikhdaftar DESC";
+			$View__query="SELECT * FROM `pengumuman` ORDER BY tarikh DESC limit 5";
 			$ViewRS = $connection->query($View__query);
 			$ViewRSNumber = $ViewRS->num_rows;
 
@@ -68,18 +67,12 @@ if (mysqli_connect_errno())
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-6 col-md-8">
-						<p><a class="btn btn-blue collapsed waves-button waves-effect" data-toggle="collapse" href="#collapsible-region'.$row['id'].'"><span class="collapsed-hide">'.$row['noplat'].'</span><span class="collapsed-show">'.$row['noplat'].'</span></a></p>
+						<p><a class="btn btn-blue collapsed waves-button waves-effect" data-toggle="collapse" href="#collapsible-region'.$row['id'].'"><span class="collapsed-hide">'.$row['tajuk'].'</span><span class="collapsed-show">'.$row['tajuk'].'</span></a></p>
 						<div class="collapsible-region collapse" id="collapsible-region'.$row['id'].'">
-							Nombor matrik: '.$row['nomatrik'].'<br>
-							Jenis: '.$row['jenis'].'<br>
-							Jenama: '.$row['jenama'].'<br>
-							Warna: '.$row['warna'].'<br>
-							Isian kebuk: '.$row['isiankebuk'].'<br>
-							Tarikh tamat lesen: '.date("d/m/Y", strtotime($row['tamatlesen'])).'<br>
-							Tarikh tamat cukai: '.date("d/m/Y", strtotime($row['tamatcukai'])).'<br>
-							Tarikh daftar: '.date("d/m/Y", strtotime($row['tarikhdaftar'])).'<br>
-							Status permohonan: '.$row['status'].'<br>
-							
+							'.$row['teks'].'<br>
+							Tarikh: '.$row['tarikh'].'<br>
+							<hr>
+							<a href="form-edit-pengumuman.php?id='.$row['id'].'" class="btn btn-yellow waves-button waves-effect">Edit</a> <a href="php/deleteinfo.php?id='.$row['id'].'" class="btn btn-red waves-button waves-effect">Delete</a>
 						</div>
 					</div>
 				</div>
