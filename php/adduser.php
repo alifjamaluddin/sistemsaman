@@ -6,8 +6,8 @@ if (!isset($_SESSION)) {
   session_start();
 }
 
-$SUCCESS = "<script>alert('Berjaya mendaftar pengguna');window.location='../pengguna.php';</script>";
-$FAILED = "<script>alert('Gagal mendaftar pengguna');window.location='../form-pengguna.php';</script>";
+$SUCCESS = "<script>alert('Berjaya mendaftar pengguna');window.location='../admin/pengguna.php';</script>";
+$FAILED = "<script>alert('Gagal mendaftar pengguna');window.location='../admin/form-pengguna.php';</script>";
 
 // if(!isset($_SESSION['USER_ID']) && empty($_SESSION['USER_ID'])) {
 // 	header("Location: " . $REDIRECT_LOGIN );
@@ -24,24 +24,23 @@ if (mysqli_connect_errno())
 
 if (isset($_POST['submit'])) {
 
-  $nomatrik=$_POST['nomatrik']; 
+  $nodaftar=$_POST['nodaftar']; 
   $password=$_POST['password']; 
   $noic=$_POST['noic']; 
   $nama=$_POST['nama']; 
-  $fakulti=$_POST['fakulti']; 
   $alamat=$_POST['alamat']; 
   $notel=$_POST['notel']; 
   $email=$_POST['email']; 
 
 
-$InsertRS__query="INSERT INTO `user` (`nomatrik`, `password`, `noic`, `nama`, `fakulti`, `alamat`, `notel`, `email`) VALUES ('$nomatrik', MD5('$password'), '$noic', '$nama', '$fakulti', '$alamat', '$notel', '$email')";
+$InsertRS__query="INSERT INTO `pengawal` (`nodaftar`, `password`, `noic`, `nama`, `alamat`, `notel`, `email`) VALUES ('$nodaftar', MD5('$password'), '$noic', '$nama', '$alamat', '$notel', '$email')";
 
 $InsertRS = $connection->query($InsertRS__query);
   if ($InsertRS) {
   	echo $SUCCESS;
     }
   else {
-  	ECHO $FAILED;
+  	echo $FAILED;
   }
 }
 

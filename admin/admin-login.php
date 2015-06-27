@@ -7,7 +7,7 @@
 	<title>Sistem Saman</title>
 
 	<!-- css -->
-	<link href="css/base.min.css" rel="stylesheet">
+	<link href="../css/base.min.css" rel="stylesheet">
 
 	<!-- favicon -->
 	<!-- ... -->
@@ -55,15 +55,15 @@
 									<div class="card-inner">
 										<p class="text-center">
 											<span class="avatar avatar-inline avatar-lg">
-												<img alt="Login" src="images/users/avatar-001.jpg">
+												<img alt="Login" src="../images/users/avatar-001.jpg">
 											</span>
 										</p>
-										<form class="form"  method="post" action="php/login.php">
+										<form class="form"  method="post" action="../php/login.php">
 											<div class="form-group form-group-label">
 												<div class="row">
 													<div class="col-md-10 col-md-push-1">
 														<label class="floating-label" for="login-username">No pendaftaran</label>
-														<input name="nomatrik" class="form-control" id="login-username" type="text">
+														<input name="username" class="form-control" id="login-username" type="text">
 													</div>
 												</div>
 											</div>
@@ -113,7 +113,7 @@
 		</div>
 	</footer>
 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="js/base.min.js" type="text/javascript"></script>
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/base.min.js" type="text/javascript"></script>
 </body>
 </html>

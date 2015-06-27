@@ -7,7 +7,7 @@
 	<title>Sistem Saman</title>
 
 	<!-- css -->
-	<link href="css/base.min.css" rel="stylesheet">
+	<link href="../css/base.min.css" rel="stylesheet">
 
 	<!-- favicon -->
 	<!-- ... -->
@@ -19,10 +19,10 @@
 		<![endif]-->
 </head>
 <body class="avoid-fout">
-<?php include('template/loading.php'); ?>
-<?php include('template/header.php'); ?>
-<?php include('template/menu.php'); ?>
-<?php include('template/profile.php'); ?>
+<?php include('../template/loading.php'); ?>
+<?php include('../template/header.php'); ?>
+<?php include('../template/menu.php'); ?>
+<?php include('../template/profile.php'); ?>
 
 	<div class="content">
 	<!-- 	<div class="content-heading">
@@ -40,9 +40,9 @@
 		</div>
 		</div>
 	</div>
-<?php include('template/footer.php'); ?>
+<?php include('../template/footer.php'); ?>
 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="js/base.min.js" type="text/javascript"></script>
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/base.min.js" type="text/javascript"></script>
 </body>
 </html>

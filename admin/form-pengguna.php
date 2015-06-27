@@ -7,7 +7,7 @@
 	<title>Pengguna</title>
 
 	<!-- css -->
-	<link href="css/base.min.css" rel="stylesheet">
+	<link href="../css/base.min.css" rel="stylesheet">
 
 	<!-- favicon -->
 	<!-- ... -->
@@ -19,10 +19,10 @@
 		<![endif]-->
 </head>
 <body class="avoid-fout">
-<?php include('template/loading.php'); ?>
-<?php include('template/header.php'); ?>
-<?php include('template/menu.php'); ?>
-<?php include('template/profile.php'); ?>
+<?php include('../template/loading.php'); ?>
+<?php include('../template/header.php'); ?>
+<?php include('../template/menu.php'); ?>
+<?php include('../template/profile.php'); ?>
 	<div class="content">
 		<div class="content-heading">
 			<div class="container">
@@ -31,7 +31,7 @@
 		</div>
 		<div class="content-inner">
 			<div class="container">
-				<form class="form" method="post" action="php/adduser.php">
+				<form class="form" method="post" action="../php/adduser.php">
 					<fieldset>
 						<legend class="col-lg-10 col-lg-offset-2 col-md-9 col-md-offset-3 col-sm-8 col-sm-offset-4">Pengguna</legend>
 						
@@ -42,7 +42,7 @@
 									<label class="form-label" for="input-text">Nombor pendaftaran</label>
 								</div>
 								<div class="col-lg-4 col-md-6 col-sm-8">
-									<input class="form-control" id="input-text" type="text" name="nomatrik" placeholder="No matrik">
+									<input class="form-control" id="input-text" type="text" name="nodaftar" placeholder="No matrik">
 								</div>
 							</div>
 						</div>
@@ -76,17 +76,6 @@
 								</div>
 								<div class="col-lg-4 col-md-6 col-sm-8">
 									<input class="form-control" id="input-text" type="text" name="noic" placeholder="Nombor kad pengenalan">
-								</div>
-							</div>
-						</div>
-
-						<div class="form-group">
-							<div class="row">
-								<div class="col-lg-2 col-md-3 col-sm-4">
-									<label class="form-label" for="input-text">Fakulti/Jabatan</label>
-								</div>
-								<div class="col-lg-4 col-md-6 col-sm-8">
-									<input class="form-control" id="input-text" type="text" name="fakulti" placeholder="Fakulti/Jabatan">
 								</div>
 							</div>
 						</div>
@@ -139,10 +128,10 @@
 			</div>
 		</div>
 	</div>
-<?php include('template/footer.php'); ?>
+<?php include('../template/footer.php'); ?>
 
 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="js/base.min.js" type="text/javascript"></script>
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/base.min.js" type="text/javascript"></script>
 </body>
 </html>

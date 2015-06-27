@@ -6,8 +6,8 @@ require( "config.php" );
 //   session_start();
 // }
 
-$SUCCESS = "<script>alert('Pengguna berjaya dipadam');window.location='../pengguna.php';</script>";
-$FAILED = "<script>alert('Pengguna gagal dipadam');window.location='../pengguna.php';</script>";
+$SUCCESS = "<script>alert('Pengguna berjaya dipadam');window.location='../admin/pengguna.php';</script>";
+$FAILED = "<script>alert('Pengguna gagal dipadam');window.location='../admin/pengguna.php';</script>";
 
 
 // if(!isset($_SESSION['USER_ID']) && empty($_SESSION['USER_ID'])) {
@@ -24,7 +24,7 @@ if (mysqli_connect_errno())
 
   $id=$_GET['id'];
 
-$DeleteRS__query="DELETE FROM `user` WHERE `id` = $id";
+$DeleteRS__query="DELETE FROM `pengawal` WHERE `id` = $id";
 $DeleteRS = $connection->query($DeleteRS__query);
 
   if ($DeleteRS) {

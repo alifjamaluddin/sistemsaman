@@ -6,8 +6,8 @@ require( "config.php" );
 //   session_start();
 // }
 
-$SUCCESS = "<script>alert('Pengumuman berjaya dipadam');window.location='../pengumuman.php';</script>";
-$FAILED = "<script>alert('Pengumuman gagal dipadam');window.location='../pengumuman.php';</script>";
+$SUCCESS = "<script>alert('Pengumuman berjaya dipadam');window.location='../admin/pengumuman.php';</script>";
+$FAILED = "<script>alert('Pengumuman gagal dipadam');window.location='../admin/pengumuman.php';</script>";
 $CANCELLED = "<script>window.location='../pengumuman.php';</script>";
 
 // if(!isset($_SESSION['USER_ID']) && empty($_SESSION['USER_ID'])) {

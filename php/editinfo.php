@@ -6,8 +6,8 @@ if (!isset($_SESSION)) {
   session_start();
 }
 
-$SUCCESS = "<script>alert('Berjaya membuat suntingan pengumuman');window.location='../pengumuman.php';</script>";
-$FAILED = "<script>alert('Gagal membuat suntingan pengumuman');window.location='../form-edit-pengumuman.php';</script>";
+$SUCCESS = "<script>alert('Berjaya membuat suntingan pengumuman');window.location='../admin/pengumuman.php';</script>";
+$FAILED = "<script>alert('Gagal membuat suntingan pengumuman');window.location='../admin/form-edit-pengumuman.php';</script>";
 
 
 // if(!isset($_SESSION['USER_ID']) && empty($_SESSION['USER_ID'])) {

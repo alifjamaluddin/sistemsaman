@@ -6,8 +6,8 @@ if (!isset($_SESSION)) {
   session_start();
 }
 
-$SUCCESS = "<script>alert('Berjaya membuat suntingan pengumuman');window.location='../pengguna.php';</script>";
-$FAILED = "<script>alert('Gagal membuat suntingan pengumuman');window.location='../pengguna.php';</script>";
+$SUCCESS = "<script>alert('Berjaya membuat suntingan pengumuman');window.location='../admin/pengguna.php';</script>";
+$FAILED = "<script>alert('Gagal membuat suntingan pengumuman');window.location='../admin/pengguna.php';</script>";
 
 
 // if(!isset($_SESSION['USER_ID']) && empty($_SESSION['USER_ID'])) {
@@ -25,7 +25,7 @@ if (mysqli_connect_errno())
 
 if (isset($_POST['submit'])) {
 
- $nomatrik=$_POST['nomatrik']; 
+ $nodaftar=$_POST['nodaftar']; 
   $password=$_POST['password']; 
   $noic=$_POST['noic']; 
   $nama=$_POST['nama']; 
@@ -36,14 +36,14 @@ if (isset($_POST['submit'])) {
   $id=$_POST['id'];
 
 
-$InsertRS__query="UPDATE `user` SET `nomatrik` = '$nomatrik', `password` = MD5('$password'), `noic` = '$noic', `nama` = '$nama', `fakulti` = '$fakulti', `alamat` = '$alamat', `notel` = '$notel', `email` = '$email'  WHERE `id` = $id";
+$InsertRS__query="UPDATE `pengawal` SET `nodaftar` = '$nodaftar', `password` = MD5('$password'), `noic` = '$noic', `nama` = '$nama', `alamat` = '$alamat', `notel` = '$notel', `email` = '$email'  WHERE `id` = $id";
 
 $InsertRS = $connection->query($InsertRS__query);
   if ($InsertRS) {
   	echo $SUCCESS;
     }
   else {
-  	ECHO $FAILED;
+  	echo $FAILED;
   }
 }
 

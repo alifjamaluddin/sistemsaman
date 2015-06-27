@@ -1,5 +1,5 @@
 <?php
-require( "php/config.php" );
+require( "../php/config.php" );
 
 // *** Validate request to login to this site.
 // if (!isset($_SESSION)) {
@@ -16,7 +16,7 @@ if (mysqli_connect_errno())
 
 
 $id = $_GET['id'];
-$Edit__query="SELECT * FROM `user` where id = $id";
+$Edit__query="SELECT * FROM `pengawal` where id = $id";
 $EditRS = $connection->query($Edit__query);
 $row = mysqli_fetch_assoc($EditRS)
 
@@ -30,7 +30,7 @@ $row = mysqli_fetch_assoc($EditRS)
 	<title>Pengguna</title>
 
 	<!-- css -->
-	<link href="css/base.min.css" rel="stylesheet">
+	<link href="../css/base.min.css" rel="stylesheet">
 
 	<!-- favicon -->
 	<!-- ... -->
@@ -42,10 +42,10 @@ $row = mysqli_fetch_assoc($EditRS)
 		<![endif]-->
 </head>
 <body class="avoid-fout">
-<?php include('template/loading.php'); ?>
-<?php include('template/header.php'); ?>
-<?php include('template/menu.php'); ?>
-<?php include('template/profile.php'); ?>
+<?php include('../template/loading.php'); ?>
+<?php include('../template/header.php'); ?>
+<?php include('../template/menu.php'); ?>
+<?php include('../template/profile.php'); ?>
 	<div class="content">
 		<div class="content-heading">
 			<div class="container">
@@ -54,7 +54,7 @@ $row = mysqli_fetch_assoc($EditRS)
 		</div>
 		<div class="content-inner">
 			<div class="container">
-				<form class="form" method="post" action="php/edituser.php">
+				<form class="form" method="post" action="../php/edituser.php">
 					<fieldset>
 						<legend class="col-lg-10 col-lg-offset-2 col-md-9 col-md-offset-3 col-sm-8 col-sm-offset-4">Pengguna</legend>
 						
@@ -65,7 +65,7 @@ $row = mysqli_fetch_assoc($EditRS)
 									<label class="form-label" for="input-text">Nombor pendaftaran</label>
 								</div>
 								<div class="col-lg-4 col-md-6 col-sm-8">
-									<input class="form-control" id="input-text" type="text" name="nomatrik" placeholder="No matrik" value="<?php echo $row['nomatrik']; ?>">
+									<input class="form-control" id="input-text" type="text" name="nodaftar" placeholder="No pendaftaran" value="<?php echo $row['nodaftar']; ?>">
 								</div>
 							</div>
 						</div>
@@ -99,17 +99,6 @@ $row = mysqli_fetch_assoc($EditRS)
 								</div>
 								<div class="col-lg-4 col-md-6 col-sm-8">
 									<input class="form-control" id="input-text" type="text" name="noic" placeholder="Nombor kad pengenalan" value="<?php echo $row['noic']; ?>">
-								</div>
-							</div>
-						</div>
-
-						<div class="form-group">
-							<div class="row">
-								<div class="col-lg-2 col-md-3 col-sm-4">
-									<label class="form-label" for="input-text">Fakulti/Jabatan</label>
-								</div>
-								<div class="col-lg-4 col-md-6 col-sm-8">
-									<input class="form-control" id="input-text" type="text" name="fakulti" placeholder="Fakulti/Jabatan" value="<?php echo $row['fakulti']; ?>">
 								</div>
 							</div>
 						</div>
@@ -164,10 +153,10 @@ $row = mysqli_fetch_assoc($EditRS)
 			</div>
 		</div>
 	</div>
-<?php include('template/footer.php'); ?>
+<?php include('../template/footer.php'); ?>
 
 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="js/base.min.js" type="text/javascript"></script>
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/base.min.js" type="text/javascript"></script>
 </body>
 </html>

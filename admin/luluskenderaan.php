@@ -1,5 +1,5 @@
 <?php
-require( "php/config.php" );
+require( "../php/config.php" );
 
 // *** Validate request to login to this site.
 // if (!isset($_SESSION)) {
@@ -24,7 +24,7 @@ if (mysqli_connect_errno())
 	<title>Pengumuman</title>
 
 	<!-- css -->
-	<link href="css/base.min.css" rel="stylesheet">
+	<link href="../css/base.min.css" rel="stylesheet">
 
 	<!-- favicon -->
 	<!-- ... -->
@@ -36,10 +36,10 @@ if (mysqli_connect_errno())
 		<![endif]-->
 </head>
 <body class="avoid-fout">
-	<?php include('template/loading.php'); ?>
-<?php include('template/header.php'); ?>
-<?php include('template/menu.php'); ?>
-<?php include('template/profile.php'); ?>
+	<?php include('../template/loading.php'); ?>
+<?php include('../template/header.php'); ?>
+<?php include('../template/menu.php'); ?>
+<?php include('../template/profile.php'); ?>
 	<div class="content">
 		<div class="content-heading">
 			<div class="container">
@@ -78,7 +78,7 @@ if (mysqli_connect_errno())
 							Tarikh tamat cukai: '.date("d/m/Y", strtotime($row['tamatcukai'])).'<br>
 							Tarikh daftar: '.date("d/m/Y", strtotime($row['tarikhdaftar'])).'<br>
 							<hr>
-							<a href="php/lulus-kenderaan.php?id='.$row['id'].'" class="btn btn-yellow waves-button waves-effect">Lulus</a> <a href="php/batal-kenderaan.php?id='.$row['id'].'" class="btn btn-red waves-button waves-effect">Batal</a>
+							<a href="../php/lulus-kenderaan.php?id='.$row['id'].'" class="btn btn-yellow waves-button waves-effect">Lulus</a> <a href="../php/batal-kenderaan.php?id='.$row['id'].'" class="btn btn-red waves-button waves-effect">Batal</a>
 						</div>
 					</div>
 				</div>
@@ -92,9 +92,9 @@ if (mysqli_connect_errno())
 		
 
 		
-	<?php include('template/footer.php'); ?>
+	<?php include('../template/footer.php'); ?>
 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="js/base.min.js" type="text/javascript"></script>
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/base.min.js" type="text/javascript"></script>
 </body>
 </html>

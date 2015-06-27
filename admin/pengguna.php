@@ -1,5 +1,5 @@
 <?php
-require( "php/config.php" );
+require( "../php/config.php" );
 
 // *** Validate request to login to this site.
 // if (!isset($_SESSION)) {
@@ -24,8 +24,8 @@ if (mysqli_connect_errno())
 	<title>Sistem Saman</title>
 
 	<!-- css -->
-	<link href="css/base.min.css" rel="stylesheet">
-	<link href="css/custom.css" rel="stylesheet">
+	<link href="../css/base.min.css" rel="stylesheet">
+	<link href="../css/custom.css" rel="stylesheet">
 
 	<!-- favicon -->
 	<!-- ... -->
@@ -37,10 +37,10 @@ if (mysqli_connect_errno())
 			<![endif]-->
 		</head>
 		<body class="avoid-fout">
-			<?php include('template/loading.php'); ?>
-			<?php include('template/header.php'); ?>
-			<?php include('template/menu.php'); ?>
-			<?php include('template/profile.php'); ?>
+			<?php include('../template/loading.php'); ?>
+			<?php include('../template/header.php'); ?>
+			<?php include('../template/menu.php'); ?>
+			<?php include('../template/profile.php'); ?>
 			<div class="content">
 				<div class="content-heading">
 					<div class="container">
@@ -90,9 +90,9 @@ if (mysqli_connect_errno())
 
 
 					if(isset($_POST['search'])){
-						$nomatrik = $_POST['carian'];
+						$nodaftar = $_POST['carian'];
 
-						$View__query="SELECT * FROM `user` where nomatrik = '$nomatrik'";
+						$View__query="SELECT * FROM `pengawal` where nodaftar = '$nodaftar'";
 						$ViewRS = $connection->query($View__query);
 						$row = mysqli_fetch_assoc($ViewRS);
 						$rowNo = $ViewRS->num_rows;
@@ -102,20 +102,19 @@ if (mysqli_connect_errno())
 						<div class="col-lg-6 col-sm-6">
 							<div class="card">
 								<aside class="card-side card-side-img">
-									<img alt="alt text" src="images/samples/portrait.jpg">
+									<img alt="alt text" src="../images/samples/portrait.jpg">
 								</aside>
 								<div class="card-main">
 									<div class="card-inner">
 										<p class="card-heading">'.strtoupper($row['nama']).'</p>
 										<p>
-											<small>Nombor pendaftaran</small> '.strtoupper($row['nomatrik']).'<br>
+											<small>Nombor pendaftaran</small> '.strtoupper($row['nodaftar']).'<br>
 											<small>Nombor kad pengenalan</small> '.$row['noic'].'<br>
-											<small>Jabatan</small> '.$row['fakulti'].'<br>
 											<small>Alamat</small> '.$row['alamat'].'<br>
 											<small>Nombor telefon</small> '.$row['notel'].'<br>
 											<small>Email</small> '.$row['email'].'<br>
 											<a href="form-edit-pengguna.php?id='.$row['id'].'" class="btn btn-flat btn-yellow waves-button waves-effect pull-left">Update User</a>
-											<a href="php/deleteuser.php?id='.$row['id'].'" class="btn btn-flat btn-red waves-button waves-effect pull-left">Delete User</a> 
+											<a href="../php/deleteuser.php?id='.$row['id'].'" class="btn btn-flat btn-red waves-button waves-effect pull-left">Delete User</a> 
 
 										</p>
 									</div>
@@ -141,9 +140,9 @@ if (mysqli_connect_errno())
 
 
 
-			<?php include('template/footer.php'); ?>
+			<?php include('../template/footer.php'); ?>
 
-			<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-			<script src="js/base.min.js" type="text/javascript"></script>
+			<script src="../js/jquery.min.js"></script>
+			<script src="../js/base.min.js" type="text/javascript"></script>
 		</body>
 		</html>

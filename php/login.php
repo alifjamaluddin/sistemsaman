@@ -7,7 +7,7 @@ if (!isset($_SESSION)) {
 }
 
 
-$SUCCESS = "<script>window.location='../admin-panel.php';</script>";
+$SUCCESS = "<script>window.location='../admin';</script>";
 $FAILED = "<script>alert('Wrong username or password');window.history.back();</script>";
 
 $connection = mysqli_connect(DB_HOST,DB_USERNAME,DB_PASSWORD,DB_NAME);
@@ -20,7 +20,7 @@ if (mysqli_connect_errno())
 
 if (isset($_POST['submit'])) {
 // echo "submitted";
-  $nomatrik=$_POST['nomatrik']; 
+  $username=$_POST['username']; 
   $password=$_POST['password']; 
   // echo $username;
   // echo $password;
@@ -28,7 +28,7 @@ if (isset($_POST['submit'])) {
   // echo $loginPassword;
 
 
-$LoginRS__query="SELECT * FROM user WHERE nomatrik='$nomatrik' AND password='$loginPassword'";
+$LoginRS__query="SELECT * FROM admin WHERE username='$username' AND password='$loginPassword'";
 // echo $LoginRS__query;
 // echo $LoginRS__query;
 

@@ -6,8 +6,8 @@ require( "config.php" );
 //   session_start();
 // }
 
-$SUCCESS = "<script>alert('Permohonan berjaya diluluskan');window.location='../luluskenderaan.php';</script>";
-$FAILED = "<script>alert('Permohonan gagal diluluskan');window.location='../luluskenderaan.php';</script>";
+$SUCCESS = "<script>alert('Permohonan berjaya diluluskan');window.location='../admin/luluskenderaan.php';</script>";
+$FAILED = "<script>alert('Permohonan gagal diluluskan');window.location='../admin/luluskenderaan.php';</script>";
 
 // if(!isset($_SESSION['USER_ID']) && empty($_SESSION['USER_ID'])) {
 // 	header("Location: " . $REDIRECT_LOGIN );
