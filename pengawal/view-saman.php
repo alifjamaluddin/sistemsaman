@@ -16,12 +16,21 @@ if (mysqli_connect_errno())
   $result['status'] = "failed";
   $result['error'] = mysqli_connect_error();
 }else{
-  $ViewRS__query="SELECT * FROM `pengumuman` limit 5";
+  $id = $_GET['id'];
+  $ViewRS__query="SELECT l.noplat, t.nama as 'tempat', l.catatan, l.nomatrik, k.nama as 'kesalahan', l.tarikhlaporan, p.nama as 'pelapor' 
+  FROM laporan l, kesalahan k, tempat t, pengawal p 
+  WHERE l.tempat = t.id 
+  AND l.kesalahan = k.id 
+  AND l.pelapor = p.id 
+  AND l.id = $id";
+
 
   $ViewRS = $connection->query($ViewRS__query);
-
   if ($ViewRS) {
+ 	$row = mysqli_fetch_assoc($ViewRS);
     $result['status'] = "success";
+  	$result['detailsaman'] = $row;
+
   }
   else {
     $result['status'] = "failed";

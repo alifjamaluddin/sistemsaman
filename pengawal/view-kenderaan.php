@@ -16,12 +16,16 @@ if (mysqli_connect_errno())
   $result['status'] = "failed";
   $result['error'] = mysqli_connect_error();
 }else{
-  $ViewRS__query="SELECT * FROM `pengumuman` limit 5";
+  $noplat = strtoupper($_GET['noplat']);
+  $ViewRS__query="SELECT * FROM kenderaan WHERE noplat = '$noplat'";
+
 
   $ViewRS = $connection->query($ViewRS__query);
-
   if ($ViewRS) {
+ 	$row = mysqli_fetch_assoc($ViewRS);
     $result['status'] = "success";
+  	$result['detailkenderaan'] = $row;
+
   }
   else {
     $result['status'] = "failed";

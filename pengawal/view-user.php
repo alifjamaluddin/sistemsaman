@@ -16,12 +16,16 @@ if (mysqli_connect_errno())
   $result['status'] = "failed";
   $result['error'] = mysqli_connect_error();
 }else{
-  $ViewRS__query="SELECT * FROM `pengumuman` limit 5";
+  $nodaftar = $_GET['nodaftar'];
+  $ViewRS__query="SELECT id, nomatrik, noic, nama, fakulti, alamat, notel, email FROM user WHERE nomatrik = '$nodaftar'";
+
 
   $ViewRS = $connection->query($ViewRS__query);
-
   if ($ViewRS) {
+ 	$row = mysqli_fetch_assoc($ViewRS);
     $result['status'] = "success";
+  	$result['detailpengguna'] = $row;
+
   }
   else {
     $result['status'] = "failed";

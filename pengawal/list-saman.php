@@ -16,12 +16,18 @@ if (mysqli_connect_errno())
   $result['status'] = "failed";
   $result['error'] = mysqli_connect_error();
 }else{
-  $ViewRS__query="SELECT * FROM `pengumuman` limit 5";
+  $pelapor = $_GET['id'];
+  $ViewRS__query="SELECT * FROM `laporan` where pelapor = $pelapor";
 
   $ViewRS = $connection->query($ViewRS__query);
-
   if ($ViewRS) {
     $result['status'] = "success";
+    $listsaman = array();
+ 	while($row = mysqli_fetch_assoc($ViewRS)){
+ 		array_push($listsaman, $row);
+ 	}
+  	$result['listsaman'] = $listsaman;
+
   }
   else {
     $result['status'] = "failed";

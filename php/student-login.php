@@ -28,7 +28,7 @@ if (isset($_POST['submit'])) {
   // echo $loginPassword;
 
 
-$LoginRS__query="SELECT * FROM student WHERE nomatrik='$nomatrik' AND password='$loginPassword'";
+$LoginRS__query="SELECT * FROM user WHERE nomatrik='$nomatrik' AND password='$loginPassword'";
 echo "<script>alert('$LoginRS__query');</script>";
 // echo $LoginRS__query;
 // echo $LoginRS__query;

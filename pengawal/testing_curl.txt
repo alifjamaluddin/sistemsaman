@@ -1,0 +1,10 @@
+LOGIN
+curl --data "nodaftar=abcd1234&password=abcd1234" -X POST http://localhost/sistemsaman/pengawal/login.php
+
+POST SAMAN
+curl --data "noplat=abc123&tempat=1&catatan=testing&nomatrik=wek110033&kesalahan=1&pelapor=1" -X POST http://localhost/sistemsaman/pengawal/saman.php
+
+VIEW SAMAN
+curl http://localhost/sistemsaman/pengawal/view-saman.php?id=1
+
+VIEW PENGUMUMAN
