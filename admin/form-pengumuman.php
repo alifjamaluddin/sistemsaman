@@ -7,7 +7,7 @@
 	<title>Pengumuman</title>
 
 	<!-- css -->
-	<link href="css/base.min.css" rel="stylesheet">
+	<link href="../css/base.min.css" rel="stylesheet">
 
 	<!-- favicon -->
 	<!-- ... -->
@@ -19,10 +19,10 @@
 		<![endif]-->
 </head>
 <body class="avoid-fout">
-<?php include('template/loading.php'); ?>
-<?php include('template/header.php'); ?>
-<?php include('template/menu.php'); ?>
-<?php include('template/profile.php'); ?>
+<?php include('../template/loading.php'); ?>
+<?php include('../template/header.php'); ?>
+<?php include('../template/menu.php'); ?>
+<?php include('../template/profile.php'); ?>
 	<div class="content">
 		<div class="content-heading">
 			<div class="container">
@@ -31,7 +31,7 @@
 		</div>
 		<div class="content-inner">
 			<div class="container">
-				<form class="form" method="post" action="php/addinfo.php">
+				<form class="form" method="post" action="../php/addinfo.php">
 					<fieldset>
 						<legend class="col-lg-10 col-lg-offset-2 col-md-9 col-md-offset-3 col-sm-8 col-sm-offset-4">Pengumuman</legend>
 						
@@ -73,10 +73,10 @@
 			</div>
 		</div>
 	</div>
-<?php include('template/footer.php'); ?>
+<?php include('../template/footer.php'); ?>
 
 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="js/base.min.js" type="text/javascript"></script>
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/base.min.js" type="text/javascript"></script>
 </body>
 </html>
