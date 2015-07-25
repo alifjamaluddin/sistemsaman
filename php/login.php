@@ -39,8 +39,10 @@ $LoginRS = $connection->query($LoginRS__query);
   if ($loginFoundUser > 0) {
     // echo "User found";
       $row = mysqli_fetch_assoc($LoginRS);
-        // $userID = $row['id'];
-        // $_SESSION['USER_ID'] = $userID;  
+        $username = $row['username'];
+        $email = $row['email'];
+        $_SESSION['username'] = $username;  
+        $_SESSION['email'] = $email;  
     echo $SUCCESS;
     }
   else {

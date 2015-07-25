@@ -22,7 +22,7 @@
 <?php include('template/loading.php'); ?>
 <?php include('template/header.php'); ?>
 <?php include('template/menu.php'); ?>
-<?php include('template/profile.php'); ?>
+<?php include('template/profile-admin.php'); ?>
 	<div class="content">
 		<div class="content-heading">
 			<div class="container">

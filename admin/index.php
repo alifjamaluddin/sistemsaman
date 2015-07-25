@@ -8,6 +8,7 @@
 
 	<!-- css -->
 	<link href="../css/base.min.css" rel="stylesheet">
+	<link href="../css/custom.css" rel="stylesheet">
 
 	<!-- favicon -->
 	<!-- ... -->
@@ -22,7 +23,7 @@
 <?php include('../template/loading.php'); ?>
 <?php include('../template/header.php'); ?>
 <?php include('../template/menu.php'); ?>
-<?php include('../template/profile.php'); ?>
+<?php include('../template/profile-admin.php'); ?>
 
 	<div class="content">
 	<!-- 	<div class="content-heading">
@@ -36,7 +37,7 @@
 		</div> -->
 		<div class="content-inner">
 		<div class="container">
-			
+			<?php include "../template/user-tabs.php"; ?>
 		</div>
 		</div>
 	</div>
