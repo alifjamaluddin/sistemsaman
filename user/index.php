@@ -36,7 +36,7 @@
 		</div> -->
 		<div class="content-inner">
 		<div class="container">
-			
+			<?php include "../template/user-tabs.php"; ?>
 		</div>
 		</div>
 	</div>

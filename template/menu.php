@@ -8,7 +8,7 @@
 							<a href="pengguna.php">Pengguna</a>
 						</li>
 						<li>
-							<a href="statistik.php">Statistik</a>
+							<a href="admin-report.php">Statistik</a>
 						</li>
 						<li>
 							<a href="pengumuman.php">Pengumuman</a>
@@ -20,4 +20,4 @@
 				</div>
 			</div>
 		</div>
-	</nav>
+	</nav>	

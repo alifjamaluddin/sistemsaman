@@ -2,9 +2,9 @@
 require( "../php/config.php" );
 
 // *** Validate request to login to this site.
-// if (!isset($_SESSION)) {
-//   session_start();
-// }
+if (!isset($_SESSION)) {
+  session_start();
+}
 
 
 $connection = mysqli_connect(DB_HOST,DB_USERNAME,DB_PASSWORD,DB_NAME);
@@ -48,9 +48,42 @@ if (mysqli_connect_errno())
 		</div>
 
 
+		<?php 
+			$nomatrik = strtoupper($_SESSION['nomatrik']);
+			$View__query="SELECT l.id, l.noplat, l.catatan, l.nomatrik, l.tarikhlaporan, t.nama as 'tempat', k.nama as 'kesalahan' FROM `laporan` l, tempat t, kesalahan k WHERE l.kesalahan = k.id and l.tempat = t.id and nomatrik = '$nomatrik' ORDER BY tarikhlaporan DESC";
+			$ViewRS = $connection->query($View__query);
+			$ViewRSNumber = $ViewRS->num_rows;
 
 
-		</div>
+		
+
+		if ($ViewRSNumber > 0) {
+			while($row = mysqli_fetch_assoc($ViewRS)){
+				echo '
+		<div class="content-inner">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-8">
+						<p><a class="btn btn-yellow collapsed waves-button waves-effect" data-toggle="collapse" href="#collapsible-region'.$row['id'].'"><span class="collapsed-hide">'.$row['noplat'].'</span><span class="collapsed-show">'.$row['noplat'].'</span></a></p>
+						<div class="collapsible-region collapse" id="collapsible-region'.$row['id'].'">
+							Nombor matrik: '.$row['nomatrik'].'<br>
+							No Plat Kenderaan: '.$row['noplat'].'<br>
+							Tempat: '.$row['tempat'].'<br>
+							Kesalahan: '.$row['kesalahan'].'<br>
+							Catatan: '.$row['catatan'].'<br>
+							Tarikh saman: '.$row['tarikhlaporan'].'<br>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>';
+		}
+	}
+?>
+
+
+		
 
 		
 	<?php include('../template/footer.php'); ?>

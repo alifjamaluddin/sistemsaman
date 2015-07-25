@@ -12,4 +12,4 @@ if (mysqli_connect_errno()){
 	$result['status'] = "success";
 }
 
-echo json_encode($result);
+echo json_encode($result);	
