@@ -50,7 +50,7 @@ if (mysqli_connect_errno())
 
 				<div class="container-inner">
 
-					<a class="btn btn-yellow waves-button waves-effect pull-right" href="form-pengguna.php">Daftar pengguna</a>
+					<a class="btn btn-yellow waves-button waves-effect pull-right" href="form-pengawal.php">Daftar pengguna</a>
 				</div>
 
 				<div class="container-inner searchbox">
@@ -114,7 +114,7 @@ if (mysqli_connect_errno())
 											<small>Alamat</small> '.$row['alamat'].'<br>
 											<small>Nombor telefon</small> '.$row['notel'].'<br>
 											<small>Email</small> '.$row['email'].'<br>
-											<a href="form-edit-pengguna.php?id='.$row['id'].'" class="btn btn-flat btn-yellow waves-button waves-effect pull-left">Update User</a>
+											<a href="form-edit-pengawal.php?id='.$row['id'].'" class="btn btn-flat btn-yellow waves-button waves-effect pull-left">Update User</a>
 											<a href="php/deleteuser.php?id='.$row['id'].'" class="btn btn-flat btn-red waves-button waves-effect pull-left">Delete User</a> 
 
 										</p>

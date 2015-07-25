@@ -7,7 +7,7 @@ if (!isset($_SESSION)) {
 }
 
 $SUCCESS = "<script>alert('Berjaya mendaftar pengguna');window.location='../admin/pengguna.php';</script>";
-$FAILED = "<script>alert('Gagal mendaftar pengguna');window.location='../admin/form-pengguna.php';</script>";
+$FAILED = "<script>alert('Gagal mendaftar pengguna');window.location='../admin/form-pengawal.php';</script>";
 
 // if(!isset($_SESSION['USER_ID']) && empty($_SESSION['USER_ID'])) {
 // 	header("Location: " . $REDIRECT_LOGIN );
