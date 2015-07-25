@@ -44,13 +44,13 @@ if (mysqli_connect_errno())
 			<div class="content">
 				<div class="content-heading">
 					<div class="container">
-						<h1 class="heading">Pengguna</h1>
+						<h1 class="heading">Pengawal Keselamatan</h1>
 					</div>
 				</div>
 
 				<div class="container-inner">
 
-					<a class="btn btn-yellow waves-button waves-effect pull-right" href="form-pengguna.php">Daftar pengguna</a>
+					<a class="btn btn-yellow waves-button waves-effect pull-right" href="form-pengawal.php">Daftar pengawal keselamatan</a>
 				</div>
 
 				<div class="container-inner searchbox">
@@ -92,7 +92,7 @@ if (mysqli_connect_errno())
 					if(isset($_POST['search'])){
 						$nodaftar = $_POST['carian'];
 
-						$View__query="SELECT * FROM `pengawal` where nodaftar = '$nodaftar'";
+						$View__query="SELECT * FROM `pengguna` where nodaftar = '$nodaftar'";
 						$ViewRS = $connection->query($View__query);
 						$row = mysqli_fetch_assoc($ViewRS);
 						$rowNo = $ViewRS->num_rows;
@@ -113,7 +113,7 @@ if (mysqli_connect_errno())
 											<small>Alamat</small> '.$row['alamat'].'<br>
 											<small>Nombor telefon</small> '.$row['notel'].'<br>
 											<small>Email</small> '.$row['email'].'<br>
-											<a href="form-edit-pengguna.php?id='.$row['id'].'" class="btn btn-flat btn-yellow waves-button waves-effect pull-left">Update User</a>
+											<a href="form-edit-pengawal.php?id='.$row['id'].'" class="btn btn-flat btn-yellow waves-button waves-effect pull-left">Update User</a>
 											<a href="../php/deleteuser.php?id='.$row['id'].'" class="btn btn-flat btn-red waves-button waves-effect pull-left">Delete User</a> 
 
 										</p>

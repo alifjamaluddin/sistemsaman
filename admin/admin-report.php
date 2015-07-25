@@ -82,16 +82,12 @@ require( "../php/config.php" );
 
 			</div>
 
-				<div class="container-inner searchbox">
+				<!-- <div class="container-inner searchbox">
 					<div class="container">
 						<div class="tile-wrap">
 							<div class="tile">
 								<form method="get" action="statistic.php"> 
-								<!-- <div class="pull-left tile-side">
-									<div class="avatar avatar-blue avatar-sm">
-										<span class="icon icon-search"></span>
-									</div>
-								</div> -->
+							
 								<div class="tile-action tile-action-show">
 									<ul class="nav nav-list pull-right">
 										<li>
@@ -124,7 +120,7 @@ require( "../php/config.php" );
 					</div>
 				</div>
 
-			</div>
+			</div> -->
 			</div>
 
 			

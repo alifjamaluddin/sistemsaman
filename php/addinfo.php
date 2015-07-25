@@ -6,7 +6,7 @@ if (!isset($_SESSION)) {
   session_start();
 }
 
-$SUCCESS = "<script>alert('Berjaya membuat pengumuman');window.location='../pengumuman.php';</script>";
+$SUCCESS = "<script>alert('Berjaya membuat pengumuman');window.location='../admin/pengumuman.php';</script>";
 $FAILED = "<script>alert('Gagal membuat pengumuman');window.location='../form-pengumuman.php';</script>";
 $CANCELLED = "<script>window.location='../pengumuman.php';</script>";
 

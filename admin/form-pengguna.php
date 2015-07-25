@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta content="IE=edge" http-equiv="X-UA-Compatible">
 	<meta content="initial-scale=1.0, width=device-width" name="viewport">
-	<title>Pengguna</title>
+	<title>Pengawal Keselamatan</title>
 
 	<!-- css -->
 	<link href="../css/base.min.css" rel="stylesheet">
@@ -33,7 +33,7 @@
 			<div class="container">
 				<form class="form" method="post" action="../php/adduser.php">
 					<fieldset>
-						<legend class="col-lg-10 col-lg-offset-2 col-md-9 col-md-offset-3 col-sm-8 col-sm-offset-4">Pengguna</legend>
+						<legend class="col-lg-10 col-lg-offset-2 col-md-9 col-md-offset-3 col-sm-8 col-sm-offset-4">Pengawal Keselamatan</legend>
 						
 
 						<div class="form-group">
@@ -120,7 +120,7 @@
 					<div class="form-group-btn">
 						<div class="row">
 							<div class="col-lg-4 col-lg-push-2 col-md-6 col-md-push-3 col-sm-8 col-sm-push-4">
-								<button class="btn btn-blue waves-button waves-light waves-effect" type="submit" name="submit">Submit</button><a class="btn waves-button waves-effect" href="pengguna.php" >Cancel</a>
+								<button class="btn btn-blue waves-button waves-light waves-effect" type="submit" name="submit">Submit</button><a class="btn waves-button waves-effect" href="pengawal.php" >Cancel</a>
 							</div>
 						</div>
 					</div>

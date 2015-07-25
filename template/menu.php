@@ -5,7 +5,7 @@
 					<a class="menu-logo" data-toggle="menu" href="#menu">Menu</a>
 					<ul class="nav">
 						<li>
-							<a href="pengguna.php">Pengguna</a>
+							<a href="pengawal.php">Pengawal Keselamatan</a>
 						</li>
 						<li>
 							<a href="admin-report.php">Statistik</a>
