@@ -2,9 +2,9 @@
 require( "../php/config.php" );
 
 // *** Validate request to login to this site.
-// if (!isset($_SESSION)) {
-//   session_start();
-// }
+if (!isset($_SESSION)) {
+  session_start();
+}
 
 
 $connection = mysqli_connect(DB_HOST,DB_USERNAME,DB_PASSWORD,DB_NAME);
@@ -36,7 +36,7 @@ if (mysqli_connect_errno())
 		<![endif]-->
 </head>
 <body class="avoid-fout">
-	<?php include('../template/loading.php'); ?>
+<?php include('../template/loading.php'); ?>
 <?php include('../template/header.php'); ?>
 <?php include('../template/student-menu.php'); ?>
 <?php include('../template/profile.php'); ?>
@@ -53,7 +53,7 @@ if (mysqli_connect_errno())
 
 
 		<?php 
-			$nomatrik = "WEK110033";
+			$nomatrik = $_SESSION['nomatrik'];
 			$View__query="SELECT * FROM `kenderaan` WHERE nomatrik = '$nomatrik' ORDER BY tarikhdaftar DESC";
 			$ViewRS = $connection->query($View__query);
 			$ViewRSNumber = $ViewRS->num_rows;
