@@ -105,7 +105,7 @@ chart.render();
 <body>
 
 
-    <div id="chartContainer" style="width: 800px; height: 380px;"></div>
+    <div id="chartContainer"></div>
     <!-- <button onclick="window.print()">Print this report</button> -->
     <!-- <button onclick="window.history.back()">Back</button> -->
 
