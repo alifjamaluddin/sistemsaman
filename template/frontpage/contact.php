@@ -1,76 +1,61 @@
-<div class="tile-wrap">
-	<div class="tile tile-purple">
-		<div class="tile-inner">
-			<div class="text-overflow">SPORT UNIT</div>
-		</div>
-	</div>
-</div>
 
 <div class="tile-wrap tile-wrap-animation isinview">
 	<div class="tile" style="-webkit-transform: translate(0px, 100%); transform: translate(0px, 100%); -webkit-transition-delay: 0s; transition-delay: 0s;">
 		
 		<div class="tile-inner">
-			<span>Puan Sarimah binti Hj. Mohamed</span>
-			<span class="pull-right">06-2645121</span>
-		</div>
-	</div>
-	<div class="tile" style="-webkit-transform: translate(0px, 100%); transform: translate(0px, 100%); -webkit-transition-delay: 0s; transition-delay: 0s;">
-		
-		<div class="tile-inner">
-			<span>Encik Mohd Shah Reza Mohd Shah</span>
-			<span class="pull-right">06-2645439</span>
-
-		</div>
-	</div>
-	
-</div>
-<div class="tile-wrap">
-	<div class="tile tile-purple">
-		<div class="tile-inner">
-			<div class="text-overflow">CO-CURRICULUM</div>
-		</div>
-	</div>
-</div>
-<div class="tile-wrap tile-wrap-animation isinview">
-	<div class="tile" style="-webkit-transform: translate(0px, 100%); transform: translate(0px, 100%); -webkit-transition-delay: 0s; transition-delay: 0s;">
-		
-		<div class="tile-inner">
-			<span>Mej (K). Ahmad Zuhaili bin Abdullah</span>
-			<span class="pull-right">06-2645442</span>
-
-		</div>
-	</div>
-	<div class="tile" style="-webkit-transform: translate(0px, 100%); transform: translate(0px, 100%); -webkit-transition-delay: 0s; transition-delay: 0s;">
-		
-		<div class="tile-inner">
-			<span>Lt. (K). Noor Masfazura binti Mamat</span>
-			<span class="pull-right">06-2645440</span>
-
-		</div>
-	</div>
-	<div class="tile" style="-webkit-transform: translate(0px, 100%); transform: translate(0px, 100%); -webkit-transition-delay: 0s; transition-delay: 0s;">
-		
-		<div class="tile-inner">
-			<span>Lt. (K). Mohd Reza bin Munajat</span>
-			<span class="pull-right">06-2645443</span>
-
-		</div>
-	</div>
-	
-</div>
-<div class="tile-wrap tile-wrap-animation isinview">
-	<div class="tile" style="-webkit-transform: translate(0px, 100%); transform: translate(0px, 100%); -webkit-transition-delay: 0s; transition-delay: 0s;">
-		
-		<div class="tile-inner">
-			<span><b>Address</b><br>
-Pusat Persatuan Pelajar,<br>
-Universiti Teknologi MARA (Melaka),<br>
-Kampus Jasin,<br>
-77300 Merlimau,<br>
-Melaka Bandaraya Bersejarah
+			
+<span><b>Kampus Induk</b><br>
+Bahagian Keselamatan,<br>
+Jabatan Pendaftar,<br>
+Wisma Aman 43600 UKM,<br>
+Bangi Selangor Darul Ehsan.<br>
+Tel : 03-89213485, 03-89215327, 03-89215072<br>
+Faks : 03-892125178 	<br>
 
 			</span>
 
 		</div>
 	</div>
 </div>
+
+<div class="tile-wrap tile-wrap-animation isinview">
+	<div class="tile" style="-webkit-transform: translate(0px, 100%); transform: translate(0px, 100%); -webkit-transition-delay: 0s; transition-delay: 0s;">
+		
+		<div class="tile-inner">
+			<span><b>Kampus Kuala Lumpur</b><br>
+Unit Keselamatan,<br>
+Kampus Kuala Lumpur UKM,<br>
+Jalan Raja Muda Abdul Aziz,<br>
+50300 Kuala Lumpur.<br>
+Tel : 03-92897010, 03-92897211<br>
+Faks : 03-26920602	<br>
+			</span>
+
+		</div>
+	</div>
+</div>
+
+<div class="tile-wrap tile-wrap-animation isinview">
+	<div class="tile" style="-webkit-transform: translate(0px, 100%); transform: translate(0px, 100%); -webkit-transition-delay: 0s; transition-delay: 0s;">
+		
+		<div class="tile-inner">
+			<span><b>Kampus PPUKM</b><br>
+Jabatan Keselamatan,<br>
+Pusat Perubatan UKM,<br>
+Jalan Yaacob Latif,<br>
+56000 Kuala Lumpur.<br>
+Tel : 03-91455090, 03-91455098<br>
+Faks:03-91456644<br>
+
+			</span>
+
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+

@@ -9,8 +9,11 @@
 				<div class="card card-alt" data-toggle="modal" href="#modal">
 					<div class="card-main">
 						<div class="card-inner">
-							<p class="card-heading text-alt">News 1</p>
-							<p>Di bulan Ramadan yang mulia ini, unit ko-kurikulum dan unit sukan UiTM Melaka Kampus Jasin ingin mengucapkan </p>
+							<p class="card-heading text-alt">Pelekat Kereta/Motosikal Pelajar Sesi 2014/2015</p>
+							<p>
+
+Tarikh pendaftaran kenderaan pelajar untuk sesi 2013/2014 adalah seperti dibawah:
+</p>
 							<!-- <a class="btn waves-button waves-effect" >Toggle Modal</a> -->
 						</div>
 						
@@ -23,9 +26,9 @@
 				<div class="card card-alt"  data-toggle="modal" href="#modal2">
 					<div class="card-main">
 						<div class="card-inner">
-							<p class="card-heading text-alt">News 2</p>
+							<p class="card-heading text-alt">Pelekat Kereta/Motosikal Kakitangan 2015-2016 (Kampus Bangi & KKL)</p>
 							<p>
-								Majlis Perwakilan Pelajar UiTM Melaka Kampus Jasin bakal memperkenalkan baju rasmi UiTM Melaka Kampus Jasin pada
+Dengan hormatnya dimaklumkan bahawa pendaftaran kenderaan untuk tahun 2015-2016 akan mula dibuka mulai 24 Oktober 2014.
 							</p>
 						</div>
 
@@ -38,9 +41,9 @@
 				<div class="card card-alt" data-toggle="modal" href="#modal3">
 					<div class="card-main">
 						<div class="card-inner">
-							<p class="card-heading text-alt">News 3</p>
+							<p class="card-heading text-alt">Pelekat Kereta/Motosikal Kakitangan/Pelajar PPUKM 2011</p>
 							<p>
-								Ada sesiapa yang ingin join event Fit Malaysia di Johor pada 30 Mei 2015 tetapi tiada kenderaan?  Kami akan sediakan bas untuk warga
+Dengan hormatnya dimaklumkan bahawa pendaftaran kenderaan untuk tahun 2011 akan mula dibuka pada 15 Disember 2010.
 							</p>
 						</div>
 
@@ -50,7 +53,7 @@
 
 
 			<!-- POSTER4 -->
-			<div class="col-lg-3 col-md-4 col-sm-6">
+<!-- 			<div class="col-lg-3 col-md-4 col-sm-6">
 				<div class="card card-alt" data-toggle="modal" href="#modal4">
 					<div class="card-main">
 						<div class="card-inner">
@@ -62,7 +65,7 @@
 
 					</div>
 				</div>
-			</div>
+			</div> -->
 
 		</div>
 	</div>
@@ -73,11 +76,32 @@
 			<div class="modal-content">
 				<div class="modal-heading">
 					<a class="modal-close" data-dismiss="modal">×</a>
-					<h2 class="modal-title">News 1</h2>
+					<!-- <h2 class="modal-title">News 1</h2> -->
 				</div>
 				<div class="modal-inner">
 					<!-- <p><strong>Overflowing text to show scroll behaviour</strong></p> -->
-					<p>Di bulan Ramadan yang mulia ini, unit ko-kurikulum dan unit sukan UiTM Melaka Kampus Jasin ingin mengucapkan Selamat Menjalankan Ibadah Puasa kepada semua warga UITM. </p></div>
+					<p>
+						Pelekat Kereta/Motosikal Pelajar Sesi 2014/2015<br>
+
+Tarikh pendaftaran kenderaan pelajar untuk sesi 2013/2014 adalah seperti dibawah:<br><br>
+
+Siswazah : bermula 27 Disember 2014<br>
+Pra Siswazah : bermula 27 Disember 2014<br>
+Tarikh kuatkuasa pelekat : 01 Januari 2015<br><br>
+
+Prosidur Pendaftaran Kenderaan Pelajar<br>
+
+Pelajar akan dibenarkan membawa kenderaan seperti peraturan yang telah ditetapkan oleh pihak universiti.
+Hanya pelajar yang mendaftar kursus pada sesi 2014/2015 sahaja dibenarkan mendaftar kenderaan.
+Semasa membeli pelekat kenderaan pelajar di kehendaki membawa :<br>
+- Lesen yang masih sah digunakan<br>
+- Kad Matrik<br>
+- Geran Asal atau salinan geran<br><br>
+Jika geran mempunyai nama tidak sama dengan pelajar, perlu membawa surat KEBENARAN dari penama pada geran kenderaan tersebut
+Pelajar akan diberikan pelekat kenderaan berwarna biru.
+Pembantu penyelidik yang berstatus pelajar akan diberikan pelekat kenderaan berwarna biru.
+
+</p></div>
 				<!-- <div class="modal-footer">
 					<p class="text-right"><button class="btn btn-flat btn-alt" data-dismiss="modal" type="button">Close</button><button class="btn btn-flat btn-alt" data-dismiss="modal" type="button">OK</button></p>
 				</div> -->
@@ -90,12 +114,29 @@
 			<div class="modal-content">
 				<div class="modal-heading">
 					<a class="modal-close" data-dismiss="modal">×</a>
-					<h2 class="modal-title">News 2</h2>
+					<!-- <h2 class="modal-title">News 2</h2> -->
 				</div>
 				<div class="modal-inner">
-				<p>Majlis Perwakilan Pelajar UiTM Melaka Kampus Jasin bakal memperkenalkan baju rasmi UiTM Melaka Kampus Jasin pada bulan ini. Baju ini akan digunapakai oleh para pelajar UiTM Melaka Kampus Jasin. Kami membuka tempahan awal kepada para pelajar UiTM Jasin bermula 10 Jun 2015. Harga tetap adalah RM30 sahaja. Dapatkan baju ini di hanya di Majlis Perwakilan Pelajar UiTM Melaka Kampus Jasin. Para Alumni UiTM Jasin juga boleh dapatkan baju ini.
+				<p>
+					Pelekat Kereta/Motosikal Kakitangan 2015-2016 (Kampus Bangi & KKL)<br>
+
+Dengan hormatnya dimaklumkan bahawa pendaftaran kenderaan untuk tahun 2015-2016 akan mula dibuka mulai 24 Oktober 2014.<br><br>
+
+Penjualan pelekat :24 Oktober 2014.<br>
+Tarikh berkuatkuasa pelekat : 1 Januari 2015<br><br>
+
+MPU bil. 24/2007 bertarikh 25/10/2007 telah menetapkan harga pelekat mulai tahun 2008 ialah RM2.00 sekeping.<br>
+Semua kenderaan yang masuk ke Kampus Universiti (Kampus Induk Bangi, Kampus Kuala Lumpur dan Kampus Tanjung Karang) akan diperiksa untuk menentukan penggunaan pelekat tersebut.<br><br>
+
+Prosedur Pendaftaran <br><br>
+
+Setiap kakitangan layak mendaftar 2 kenderaan. <br>
+Semasa membeli pelekat kenderaan kakitangan di kehendaki membawa :<br><br>
+
+Lesen yang masih sah digunakan<br>
+Kad Kampus<br>
 </p><br>
-<img src="images/news2.png" style="max-width:400px">
+
 				</div>
 				<!-- <div class="modal-footer">
 					<p class="text-right"><button class="btn btn-flat btn-alt" data-dismiss="modal" type="button">Close</button><button class="btn btn-flat btn-alt" data-dismiss="modal" type="button">OK</button></p>
@@ -109,13 +150,21 @@
 			<div class="modal-content">
 				<div class="modal-heading">
 					<a class="modal-close" data-dismiss="modal">×</a>
-					<h2 class="modal-title">News 3</h2>
+					<!-- <h2 class="modal-title">News 3</h2> -->
 				</div>
 				<div class="modal-inner">
-					<p>Ada sesiapa yang ingin join event Fit Malaysia di Johor pada 30 Mei 2015 tetapi tiada kenderaan?  Kami akan sediakan bas untuk warga UiTM Jasin tetapi kami akan melihat berapa ramai yang memerlukan bas ke sana. Sila beritahu kami melalui komen mahupun personal masej di page ini selewat-lewatnya Jumaat (15 Mei 2015). Daftarkan diri anda  <a href="https://www.fit.my/content/events/johor_20150530/12870 ">di sini</a>  untuk join Fit Malaysia 
-Sebarang pertanyaan boleh menghubungi Hamizah-0172076944 atau Nurfatien-0102779721
-</p>
-<img src="images/news3.png" style="max-width:400px">
+					<p>
+Pelekat Kereta/Motosikal Kakitangan/Pelajar PPUKM 2011<br>
+Dengan hormatnya dimaklumkan bahawa pendaftaran kenderaan untuk tahun 2011 akan mula dibuka pada 15 Disember 2010.<br><br>
+Penjualan pelekat :10 Januari 2011 <br>
+Tarikh berkuatkuasa pelekat : 1 Februari 2011<br><br>
+Kakitangan PPUKM boleh mengambil pelekat kenderaan di Pejabat Jabatan Keselamatan, PPUKM. <br>
+Prosedur Pendaftaran <br>
+Setiap kakitangan boleh mendaftar 2 kenderaan. Pelekat zon hanya dikeluarkan 1 sahaja. :<br>
+Semasa membeli stiker kenderaan kakitangan dikehendaki membawa<br>
+Lesen yang masih sah digunakan<br>
+Kad Kampus<br>
+					</p>
 	</div>
 				<!-- <div class="modal-footer">
 					<p class="text-right"><button class="btn btn-flat btn-alt" data-dismiss="modal" type="button">Close</button><button class="btn btn-flat btn-alt" data-dismiss="modal" type="button">OK</button></p>

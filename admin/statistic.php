@@ -49,40 +49,6 @@ include "../php/check_access_admin.php";
         });
     }
 
-    if(type=="place"){
-
-      var url = "generateDataPlace.php?place="+place;
-        $(document).ready(function () {
-
-            $.getJSON(url, function (result) {
-      
-     var chart = new CanvasJS.Chart("chartContainer",
-    {
-      zoomEnabled: true,      
-      
-      title:{
-       text: "Chart With Date-Time Stamps Inputs"       
-     },
-
-     data: [
-     {        
-      type: "area",
-      xValueType: "dateTime",
-      dataPoints: [                  
-              { x: 949248000, y :3},
-              { x: 949248000, y : 1 }
-      ]
-    }
-    ]
-  });
-
-chart.render();
-  });
-
-        });
-
-
-    }
    
 
         function getUrlVars()
