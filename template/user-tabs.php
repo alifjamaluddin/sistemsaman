@@ -18,9 +18,6 @@
 							<div class="tab-pane fade active in" id="first-tab">
 								<?php include "frontpage/home.php"; ?>
 							</div>
-							<div class="tab-pane fade" id="second-tab">
-								<?php include "frontpage/about.php"; ?>
-							</div>
 							<div class="tab-pane fade" id="third-tab">
 								<?php include "frontpage/contact.php"; ?>
 							</div>
