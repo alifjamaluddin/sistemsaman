@@ -21,6 +21,7 @@ $catatan = $_POST['catatan'];
 $nomatrik = $_POST['nomatrik'];
 $kesalahan = $_POST['kesalahan'];
 $pelapor = $_POST['pelapor'];
+$image = $_POST['image'];
 
 
   $SamanRS__query="INSERT INTO `laporan` (`noplat`, `tempat`, `catatan`, `nomatrik`, `kesalahan`,`pelapor`) 
