@@ -50,7 +50,7 @@ if (mysqli_connect_errno())
 
 		<?php 
 			$nomatrik = strtoupper($_SESSION['nomatrik']);
-			$View__query="SELECT l.id, l.noplat, l.catatan, l.nomatrik, l.tarikhlaporan, t.nama as 'tempat', k.nama as 'kesalahan' FROM `laporan` l, tempat t, kesalahan k WHERE l.kesalahan = k.id and l.tempat = t.id and nomatrik = '$nomatrik' ORDER BY tarikhlaporan DESC";
+			$View__query="SELECT l.id, l.noplat, l.catatan, l.nomatrik, l.tarikhlaporan, l.image, t.nama as 'tempat', k.nama as 'kesalahan' FROM `laporan` l, tempat t, kesalahan k WHERE l.kesalahan = k.id and l.tempat = t.id and nomatrik = '$nomatrik' ORDER BY tarikhlaporan DESC";
 			$ViewRS = $connection->query($View__query);
 			$ViewRSNumber = $ViewRS->num_rows;
 
@@ -64,7 +64,7 @@ if (mysqli_connect_errno())
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-6 col-md-8">
-						<p><a class="btn btn-yellow collapsed waves-button waves-effect" data-toggle="collapse" href="#collapsible-region'.$row['id'].'"><span class="collapsed-hide">'.$row['noplat'].'</span><span class="collapsed-show">'.$row['noplat'].'</span></a></p>
+						<p><a class="btn btn-yellow collapsed waves-button waves-effect" data-toggle="collapse" href="#collapsible-region'.$row['id'].'"><span class="collapsed-hide">'.date("d/m/Y", strtotime($row['tarikhlaporan'])).'</span><span class="collapsed-show">'.date("d/m/Y", strtotime($row['tarikhlaporan'])).'</span></a></p>
 						<div class="collapsible-region collapse" id="collapsible-region'.$row['id'].'">
 							Nombor matrik: '.$row['nomatrik'].'<br>
 							No Plat Kenderaan: '.$row['noplat'].'<br>
@@ -72,6 +72,14 @@ if (mysqli_connect_errno())
 							Kesalahan: '.$row['kesalahan'].'<br>
 							Catatan: '.$row['catatan'].'<br>
 							Tarikh saman: '.$row['tarikhlaporan'].'<br>
+							';
+					if($row['image']==""){
+						echo 'Tiada paparan imej';
+					}else{
+						echo '<img src="../images/laporan/'.$row['image'].'">';
+					}
+
+							echo '
 							
 						</div>
 					</div>
