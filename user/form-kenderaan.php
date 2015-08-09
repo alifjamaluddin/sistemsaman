@@ -34,17 +34,6 @@
 				<form class="form" method="post" action="../php/addkenderaan.php">
 					<fieldset>
 						<legend class="col-lg-10 col-lg-offset-2 col-md-9 col-md-offset-3 col-sm-8 col-sm-offset-4">Kenderaan</legend>
-						
-			<div class="form-group">
-							<div class="row">
-								<div class="col-lg-2 col-md-3 col-sm-4">
-									<label class="form-label" for="input-text">Nombor matrik</label>
-								</div>
-								<div class="col-lg-4 col-md-6 col-sm-8">
-									<input class="form-control" id="input-text" type="text" name="nomatrik" placeholder="Nombor matrik">
-								</div>
-							</div>
-						</div>
 
 						<div class="form-group">
 							<div class="row">

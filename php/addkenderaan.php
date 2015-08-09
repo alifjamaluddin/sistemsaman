@@ -24,7 +24,7 @@ if (mysqli_connect_errno())
 
 if (isset($_POST['submit'])) {
 
-  $nomatrik=strtoupper($_POST['nomatrik']); 
+  $nomatrik=strtoupper($_SESSION['nomatrik']); 
   $noplat=strtoupper($_POST['noplat']); 
   $jenis=strtoupper($_POST['jenis']); 
   $jenama=strtoupper($_POST['jenama']); 
