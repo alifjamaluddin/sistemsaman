@@ -7,7 +7,7 @@
 				</a>
 			</li>
 		</ul>
-		<a class="header-logo" href="#">Sistem Saman</a>
+		<a class="header-logo" href="index.php">Sistem Saman</a>
 		<ul class="nav nav-list pull-right">
 			<li>
 				<a data-toggle="menu" href="#profile">

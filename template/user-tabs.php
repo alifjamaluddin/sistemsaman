@@ -3,13 +3,10 @@
 				<nav class="tab-nav tab-nav-alt front-tabs">
 							<ul class="nav nav-justified">
 								<li  class="active">
-									<a class="waves-color-alt waves-effect" data-toggle="tab" href="#first-tab" aria-expanded="false">Home</a>
+									<a class="waves-color-alt waves-effect" data-toggle="tab" href="#first-tab" aria-expanded="false">Laman Utama</a>
 								</li>
 								<li>
-									<a class="waves-color-alt waves-effect" data-toggle="tab" href="#second-tab" aria-expanded="true">About</a>
-								</li>
-								<li>
-									<a class="waves-color-alt waves-effect" data-toggle="tab" href="#third-tab">Contact</a>
+									<a class="waves-color-alt waves-effect" data-toggle="tab" href="#third-tab">Hubungi</a>
 								</li>
 							</ul>
 						<div class="tab-nav-indicator" style="left: 204px; right: 189px;"></div>

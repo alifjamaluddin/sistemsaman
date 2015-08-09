@@ -1,5 +1,5 @@
 <div class="row home-header">
-	<h1>LATEST NEWS & ANNOUNCEMENT</h1>	
+	<h1>Berita Terkini</h1>	
 </div>
 <div class="poster">
 	<div class="card-wrap">

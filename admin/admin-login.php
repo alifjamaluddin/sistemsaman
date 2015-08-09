@@ -35,7 +35,7 @@
 		</div>
 	</div>
 	<header class="header">
-		<span class="header-logo">Material</span>
+		<span class="header-logo">Sistem Saman</span>
 	</header>
 	<div class="content">
 		<div class="content-heading">
@@ -62,7 +62,7 @@
 											<div class="form-group form-group-label">
 												<div class="row">
 													<div class="col-md-10 col-md-push-1">
-														<label class="floating-label" for="login-username">No pendaftaran</label>
+														<label class="floating-label" for="login-username">Nombor pendaftaran</label>
 														<input name="username" class="form-control" id="login-username" type="text">
 													</div>
 												</div>
@@ -70,7 +70,7 @@
 											<div class="form-group form-group-label">
 												<div class="row">
 													<div class="col-md-10 col-md-push-1">
-														<label class="floating-label" for="login-password">Password</label>
+														<label class="floating-label" for="login-password">Kata laluan</label>
 														<input name="password" class="form-control" id="login-password" type="password">
 													</div>
 												</div>
@@ -98,20 +98,12 @@
 								</div>
 							</div>
 						</div>
-						<div class="clearfix">
-							<p class="margin-no-top pull-left"><a href="javascript:void(0)">Need help?</a></p>
-							<p class="margin-no-top pull-right"><a href="javascript:void(0)">Create an account</a></p>
-						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<footer class="footer">
-		<div class="container">
-			<p>Material</p>
-		</div>
-	</footer>
+	<?php include('../template/footer.php'); ?>
 
 	<script src="../js/jquery.min.js"></script>
 	<script src="../js/base.min.js" type="text/javascript"></script>

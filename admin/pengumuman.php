@@ -21,7 +21,7 @@ if (mysqli_connect_errno())
 	<meta charset="UTF-8">
 	<meta content="IE=edge" http-equiv="X-UA-Compatible">
 	<meta content="initial-scale=1.0, width=device-width" name="viewport">
-	<title>Pengumuman</title>
+	<title>Sistem Saman</title>
 
 	<!-- css -->
 	<link href="../css/base.min.css" rel="stylesheet">

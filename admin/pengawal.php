@@ -67,7 +67,7 @@ if (mysqli_connect_errno())
 									<ul class="nav nav-list pull-right">
 										<li>
 											<div class="form-group-btn">
-												<button class="btn btn-blue waves-button waves-light waves-effect" type="submit" name="search">Search</button>
+												<button class="btn btn-blue waves-button waves-light waves-effect" type="submit" name="search">Cari</button>
 											</div>
 										</li>
 									</ul>
@@ -113,8 +113,8 @@ if (mysqli_connect_errno())
 											<small>Alamat</small> '.$row['alamat'].'<br>
 											<small>Nombor telefon</small> '.$row['notel'].'<br>
 											<small>Email</small> '.$row['email'].'<br>
-											<a href="form-edit-pengawal.php?id='.$row['id'].'" class="btn btn-flat btn-yellow waves-button waves-effect pull-left">Update User</a>
-											<a href="../php/deleteuser.php?id='.$row['id'].'" class="btn btn-flat btn-red waves-button waves-effect pull-left">Delete User</a> 
+											<a href="form-edit-pengawal.php?id='.$row['id'].'" class="btn btn-flat btn-yellow waves-button waves-effect pull-left">Kemaskini</a>
+											<a href="../php/deleteuser.php?id='.$row['id'].'" class="btn btn-flat btn-red waves-button waves-effect pull-left">Padam</a> 
 
 										</p>
 									</div>

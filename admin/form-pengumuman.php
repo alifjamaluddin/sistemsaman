@@ -26,7 +26,7 @@
 	<div class="content">
 		<div class="content-heading">
 			<div class="container">
-				<h1 class="heading">Create Announcement</h1>
+				<h1 class="heading">Membuat Pengumuman</h1>
 			</div>
 		</div>
 		<div class="content-inner">
@@ -65,7 +65,7 @@
 					<div class="form-group-btn">
 						<div class="row">
 							<div class="col-lg-4 col-lg-push-2 col-md-6 col-md-push-3 col-sm-8 col-sm-push-4">
-								<button class="btn btn-blue waves-button waves-light waves-effect" type="submit" name="submit">Submit</button><a class="btn waves-button waves-effect" href="pengumuman.php" >Cancel</a>
+								<button class="btn btn-blue waves-button waves-light waves-effect" type="submit" name="submit">Hantar</button><a class="btn waves-button waves-effect" href="pengumuman.php" >Batal</a>
 							</div>
 						</div>
 					</div>

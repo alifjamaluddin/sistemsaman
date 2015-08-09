@@ -10,7 +10,7 @@ require( "../php/config.php" );
 	<meta charset="UTF-8">
 	<meta content="IE=edge" http-equiv="X-UA	-Compatible">
 	<meta content="initial-scale=1.0, width=device-width" name="viewport">
-	<title>Student Activity Center Reservation System</title>
+	<title>Sistem Saman</title>
 
 	<!-- css -->
 	<link href="../css/base.min.css" rel="stylesheet">
@@ -35,7 +35,7 @@ require( "../php/config.php" );
 			<div class="content">
 	<div class="content-heading">
 					<div class="container">
-						<h1 class="heading">Statistic Report</h1>
+						<h1 class="heading">Laporan Statistik</h1>
 					</div>
 				</div>
 				<div class="container-inner searchbox">
@@ -52,7 +52,7 @@ require( "../php/config.php" );
 									<ul class="nav nav-list pull-right">
 										<li>
 											<div class="form-group-btn">
-												<button class="btn btn-blue waves-button waves-light waves-effect" type="submit"	>Generate Report</button>
+												<button class="btn btn-blue waves-button waves-light waves-effect" type="submit"	>Janaan Laporan</button>
 											</div>
 										</li>
 									</ul>
@@ -60,18 +60,18 @@ require( "../php/config.php" );
 								<div class="tile-inner">
 
 									<select class="form-control" id="input-select" name="month" onchange="" size="1">
-								    <option value="1">January</option>
-								    <option value="2">February</option>
-								    <option value="3">March</option>
+								    <option value="1">Januari</option>
+								    <option value="2">Februari</option>
+								    <option value="3">Mac</option>
 								    <option value="4">April</option>
-								    <option value="5">May</option>
-								    <option value="6">June</option>
-								    <option value="7">July</option>
-								    <option value="8">August</option>
+								    <option value="5">Mei</option>
+								    <option value="6">Jun</option>
+								    <option value="7">Julai</option>
+								    <option value="8">Ogos</option>
 								    <option value="9">September</option>
-								    <option value="10">October</option>
+								    <option value="10">Oktober</option>
 								    <option value="11">November</option>
-								    <option value="12">December</option>
+								    <option value="12">Disember</option>
 								</select>
 								<input type="hidden" name="type" value="month">
 								</div>
